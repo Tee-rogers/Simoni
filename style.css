@@ -1,0 +1,99 @@
+html{
+    background-color: #2D3344;
+    color: white;
+    text-align: center;
+    font-family: "Oxygen";
+}
+
+body{
+    width: 75%;
+    margin: auto;
+}
+
+.header{
+    font-size: 4em;
+}
+.countdown-container{
+    display:flex; 
+    justify-content:center;
+    /* width: 60%; */
+    margin: auto;
+}
+.clock-space{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.number-container{
+    padding: 15%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 4rem;
+    border-radius: 20%;
+    width: 30%;
+    display: flex;
+}
+#hours-container{
+    background-color:#FF6451;
+}
+
+#minutes-container{
+    background-color:#00BFC6;
+    
+}
+#seconds-container{
+    background-color:#c32182;
+    
+}
+.number{
+    margin: 0% auto;
+}
+
+.control-container{
+    width: 85%;
+    margin: 0% auto;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.control-buttons{
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+#start-button{
+    background-color:#00C67B ;
+}
+#stop-button{
+    background-color:#951616;
+}
+
+.bottom-navigation{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+}
+
+.nav-item{
+    margin: auto;
+}
+/* colors we'll need
+    pink: #FF6451
+    blue: #00BFC6
+    yellow: #FFC540
+    red: #951616
+    green: #00C67B
+
+fonts: 
+    Oxygen: 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+    font-family: 'Oxygen', sans-serif;
+ */
