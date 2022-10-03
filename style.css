@@ -96,7 +96,7 @@ body{
     }
 
 .checkbox {
-    display: none;
+    /* display: none; */
 }
 /* colors we'll need
     pink: #FF6451
