@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head> 
+<title> Simoni ALARM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+        .toggle{
+        --width: 80px;
+        --height: calc(var(width) /3);
+        position: relative;
+        display: inline-block;
+        width: var(--width);
+        height: var(--height);
+        box-shadow: Opx 1px 3px rgba(0,0,0,0.3) ;
+        border-radius: var(--height);
+        cursor: pointer;
+        }
+    
+    .checkbox {
+        display: none;
+    }
+</style>
+</head>
+
+<body> 
+
+<h1 class="header">ALARM</h1>
+
+<div class="alarm-list">
+    
+    <div class="alarm-container">
+        
+        <div class="alarm-time">12:00pm</div>
+        <div class="alarm-name">Alarm name</div>
+        <input type="checkbox" id="switch" class="checkbox" />
+        <label for="switch" class="toggle">
+        </label>
+    </div>
+    <div class="alarm-container">
+        
+        <div class="alarm-time">1:00pm</div>
+        <div class="alarm-name">Alarm name</div>
+        <input type="checkbox" id="switch" class="checkbox" />
+        <label for="switch" class="toggle">
+        </label>
+    </div>
+    <div class="alarm-container">
+        
+        <div class="alarm-time">3:00pm</div>
+        <div class="alarm-name">Alarm name</div>
+        <input type="checkbox" id="switch" class="checkbox" />
+        <label for="switch" class="toggle">
+        </label>
+    </div>
+
+</div>
+</body>
+
+</html>
