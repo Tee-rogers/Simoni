@@ -14,7 +14,7 @@ body{
     font-size: 4em;
 }
 .countdown-container{
-    display:flex; 
+    display:flex;
     justify-content:center;
     /* width: 60%; */
     margin: auto;
@@ -24,7 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 .number-container{
     padding: 15%;
@@ -41,11 +41,11 @@ body{
 
 #minutes-container{
     background-color:#00BFC6;
-    
+
 }
 #seconds-container{
     background-color:#c32182;
-    
+
 }
 .number{
     margin: 0% auto;
@@ -57,7 +57,7 @@ body{
     padding: 5%;
     display: flex;
     justify-content: space-around;
-    
+
 }
 .control-buttons{
     color: white;
@@ -91,8 +91,8 @@ body{
     red: #951616
     green: #00C67B
 
-fonts: 
-    Oxygen: 
+fonts:
+    Oxygen:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
