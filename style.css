@@ -82,6 +82,22 @@ body{
 .nav-item{
     margin: auto;
 }
+
+.toggle{
+    --width: 80px;
+    --height: calc(var(width) /3);
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: Opx 1px 3px rgba(0,0,0,0.3) ;
+    border-radius: var(--height);
+    cursor: pointer;
+    }
+
+.checkbox {
+    display: none;
+}
 /* colors we'll need
     pink: #FF6451
     blue: #00BFC6
