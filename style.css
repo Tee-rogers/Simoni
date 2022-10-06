@@ -11,7 +11,11 @@ body{
 }
 
 .header{
+    display:flex;
     font-size: 4em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2px;
 }
 .countdown-container{
     display:flex;
@@ -80,7 +84,7 @@ body{
     left: 0;
     bottom: 0;
     text-align: center;
-    }
+}
 
 
 .nav-item{
@@ -148,15 +152,15 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
-.alarm-container{
+.content-container{
     display:flex;
     justify-content: space-around;
-    /* margin: auto; */
-    
+    /* margin: auto; */ 
 }
-.time-and-name{
+.topl-and-bottoml{
     display: flex;
     flex-direction: column;
+    font-size: 2em;
 }
 a, a:visited{
     color: white;
@@ -165,7 +169,10 @@ a, a:visited{
 hr{
     margin-bottom: 10%;
 }
-
+.top-and-bottom{
+    display: flex;
+    flex-direction: column;
+}
 
 /* colors we'll need
     pink: #FF6451
