@@ -217,6 +217,19 @@ hr{
     display: flex;
     justify-content: space-around;
 }
+.list-space{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: auto;
+}
+.labels{
+    display: flex;
+    justify-content: left;
+}
+.aside{
+    display: block;
+}
 /* colors we'll need
     pink: #FF6451
     blue: #00BFC6
