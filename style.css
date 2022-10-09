@@ -22,6 +22,11 @@ body{
     justify-content:center;
     margin: auto;
 }
+.alarm-container{
+    display:flex;
+    justify-content:center;
+    margin: auto;
+}
 .clock-space{
     width:100%;
     display: flex;
@@ -67,6 +72,15 @@ body{
     border: none;
     padding: 2% 5%;
     border-radius: 10px;
+}
+.delete-button{
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+#deletes-button{
+    background-color:#951616;
 }
 #start-button{
     background-color:#00C67B ;
@@ -173,7 +187,36 @@ hr{
     display: flex;
     flex-direction: column;
 }
-
+.left-and-right{
+    display: flex;
+    flex-direction: row;
+}
+.settings-space{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: auto;
+}
+.back-button{
+    display: flex;
+    order: 1;
+}
+.action-button{
+    display: flex;
+    order: 3;
+}
+.header2{
+    display:flex;
+    font-size: 4em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2px;
+    order: 2;
+}
+.left-and-right{
+    display: flex;
+    justify-content: space-around;
+}
 /* colors we'll need
     pink: #FF6451
     blue: #00BFC6
