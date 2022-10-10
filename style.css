@@ -210,12 +210,21 @@ hr{
     background-color: transparent;
     border: none;
 }
-.header-items{
+.header-items {
     display: flex;
     align-items: center;
 }
-
-.header2, .world-header{
+.world-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+}
+.overlay{
+    width: 90%;
+    margin: auto;
+}
+.header2, .header {
     display:flex;
     font-size: 4em;
     justify-content: left;
@@ -224,6 +233,12 @@ hr{
 .main-content, .main-display{
     width: 90%;
     margin: auto;
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 90%;
 }
 
 .left-and-right{
@@ -247,6 +262,9 @@ hr{
 .pause{
     color: black;
     background-color: #FFC540;
+}
+hr{
+    width: 100%;
 }
 /* colors we'll need
     pink: #FF6451
