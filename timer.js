@@ -29,7 +29,7 @@ setTimerOptions('seconds-number')
 let startHours; 
 let startMinutes; 
 let startSeconds
-let startButton = document.querySelector('#start-button')
+let startButton = document.querySelector('.start-button')
 function updateClock(unit){
     current = document.querySelector(`#${unit}-number`).selectedIndex - 1;
     document.querySelector(`#${unit}-number`).selectedIndex = current;
