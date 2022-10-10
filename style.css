@@ -13,9 +13,8 @@ body{
 .header{
     display:flex;
     font-size: 4em;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 2px;
+    justify-content: left;
+    width: 90%;
 }
 .countdown-container{
     display:flex;
@@ -199,20 +198,34 @@ hr{
 }
 .back-button{
     display: flex;
-    order: 1;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: transparent;
+    border: none;
 }
 .action-button{
     display: flex;
-    order: 3;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: transparent;
+    border: none;
 }
-.header2{
+.header-items{
+    display: flex;
+    align-items: center;
+}
+
+.header2, .world-header{
     display:flex;
     font-size: 4em;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 2px;
-    order: 2;
+    justify-content: left;
+    min-width: 90%;
 }
+.main-content, .main-display{
+    width: 90%;
+    margin: auto;
+}
+
 .left-and-right{
     display: flex;
     justify-content: space-around;
@@ -229,6 +242,11 @@ hr{
 }
 .aside{
     display: block;
+}
+
+.pause{
+    color: black;
+    background-color: #FFC540;
 }
 /* colors we'll need
     pink: #FF6451
