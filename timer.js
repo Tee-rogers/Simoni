@@ -2,11 +2,11 @@ function setTimerOptions(id){
     let n; 
     switch(id){
         case 'hours-number': 
-            n = 24;
+            n = 23;
             break;
         case 'minutes-number':
         case 'seconds-number':
-            n = 60;
+            n = 59;
             break;
     }
     for(let i = 0; i<=n; i++){
@@ -26,17 +26,59 @@ setTimerOptions('hours-number')
 setTimerOptions('minutes-number')
 setTimerOptions('seconds-number')
 
-
+let startHours; 
+let startMinutes; 
+let startSeconds
 let startButton = document.querySelector('#start-button')
+function updateClock(unit){
+    current = document.querySelector(`#${unit}-number`).selectedIndex - 1;
+    document.querySelector(`#${unit}-number`).selectedIndex = current;
+    return current
+}
+
+function startTimer(){
+    currentHours = document.querySelector('#hours-number').selectedIndex; 
+    currentSeconds = document.querySelector('#seconds-number').selectedIndex; 
+    currentMinutes = document.querySelector('#minutes-number').selectedIndex; 
+    updateClock("seconds")
+    if(currentSeconds == 0){
+        if(currentMinutes!=0){
+            updateClock("minutes")
+            document.querySelector('#seconds-number').selectedIndex = 59;
+        } 
+        else{
+            if(currentHours !=0){
+                updateClock("hours")
+                document.querySelector('#minutes-number').selectedIndex = 59;
+                document.querySelector('#seconds-number').selectedIndex = 59;
+            } else {
+                // END OF TIMER
+                document.querySelector('#seconds-number').selectedIndex = 0;
+                clearInterval(secondsInterval);
+            }
+        }
+    }
+};
+
 startButton.addEventListener("click", (e) => {
-    let hOp = document.querySelector('#hours-number'); 
-    let mOp = document.querySelector('#minutes-number'); 
-    let sOp = document.querySelector('#seconds-number'); 
-    let hours = hOp.options[hOp.selectedIndex].text;
-    let minutes = mOp.options[mOp.selectedIndex].text;
-    let seconds = sOp.options[sOp.selectedIndex].text;
-    setInterval(() => {
-        document.querySelector
-    }, 1000)
-    console.log(hours, minutes, seconds)
+    secondsInterval = setInterval(startTimer, 10)
+    
+    function toggleStartPause(state){
+        e.target.innerText = `${state}`.toUpperCase(); 
+        e.target.classList.remove("start")
+        e.target.classList.remove("pause")
+        e.target.classList.add(state)
+    }
+    
+    if(e.target.classList.contains("start")){
+        toggleStartPause("pause")
+        clearInterval(secondsInterval);
+    } else if(e.target.classList.contains("pause")){
+        toggleStartPause("start")
+    } else{
+        toggleStartPause("pause")
+        console.log("First timer")
+    }
+
+
 })
