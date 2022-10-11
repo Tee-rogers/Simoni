@@ -1,0 +1,111 @@
+body{
+    font-family: 'Actor';
+    background-image: url('../images/background.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upper-container{
+    padding: 7% 0%;
+    width: 50%;
+    margin: auto;
+}
+.upper-content{
+    text-align: center;
+}
+.middle-container{
+    width: 40%;
+    margin: auto;
+    padding: 7% 0%;
+}
+.middle-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.project-description{
+    padding-left: 5%;
+}
+
+.lower-container{
+    width: 90%;
+    margin: auto;
+    padding: 7% 0%;
+}
+.lower-content{
+    display: flex;
+    justify-content: space-between;
+}
+.individual-side{
+    width: 40%;
+}
+.person-photo{
+    padding: 5% 0%;
+    width: 200px;
+    width: 200px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+}
+.links a img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 0%;
+    margin: 0%;
+}
+.name-title{
+    font-family: 'Abel';
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-bottom: 0%;
+}
+.job-titles{
+    font-family: 'Abel';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 1.3em;
+}
+.job-title{
+    font-weight: 100;
+}
+
+.period{
+    height: 1%;
+    padding: 0% 1%;
+}
+
+#toni-side{
+    text-align: right;
+}
+
+.links-container{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+}
+
+#toni-side .links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toni-side .job-titles{
+    /* text-align: right; */
+    margin-left: auto;
+}
+#simone-side .job-titles{
+    width: 83%;
+}
+#simone-side .period{
+    padding: 0% 1%;
+}
+
+
