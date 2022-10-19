@@ -4,9 +4,12 @@ body{
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 1.5em;
 }
 .upper-container{
-    padding: 7% 0%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    max-width: 50%;
     width: 50%;
     margin: auto;
 }
@@ -14,21 +17,28 @@ body{
     text-align: center;
 }
 .middle-container{
+    max-width: 40%;
     width: 40%;
     margin: auto;
     padding: 7% 0%;
 }
 .middle-content{
     display: flex;
+    max-width: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-.project-description{
+.project-container{
     padding-left: 5%;
+}
+.project-title{
+    margin: 0%;
+    font-size: 2em;
 }
 
 .lower-container{
+    max-width: 100%;
     width: 90%;
     margin: auto;
     padding: 7% 0%;
@@ -38,42 +48,51 @@ body{
     justify-content: space-between;
 }
 .individual-side{
+    max-width: 40%;
     width: 40%;
 }
 .person-photo{
     padding: 5% 0%;
-    width: 200px;
-    width: 200px;
+    max-width: 150px;
+    width: 150px;
+    max-height: 150px;
+    height: 150px;
 }
 .links {
     display: flex;
     align-items: center;
+    max-width: 45%;
     width: 45%;
     justify-content: space-between;
+    padding-bottom: 5%;
 }
 .links a img{
     display: flex;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     padding: 0%;
     margin: 0%;
 }
 .name-title{
     font-family: 'Abel';
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 100;
-    margin-bottom: 0%;
+    margin: 0%;
 }
 .job-titles{
     font-family: 'Abel';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
     font-size: 1.3em;
+    max-width: 70%;
+    width: 70%;
+    padding: 4% 0%;
 }
 .job-title{
-    font-weight: 100;
+    font-weight: bolder;
+    font-size: 0.6em;
+    margin: 0%;
 }
 
 .period{
@@ -85,27 +104,97 @@ body{
     text-align: right;
 }
 
-.links-container{
-    width: 45%;
-    display: block;
+#toni-side .links{
     margin-left: auto;
 }
-
-#toni-side .links{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.personal-description{
+    font-size: 0.6em;
 }
 
 #toni-side .job-titles{
-    /* text-align: right; */
     margin-left: auto;
 }
-#simone-side .job-titles{
-    width: 83%;
-}
+
 #simone-side .period{
     padding: 0% 1%;
 }
 
 
+@media (max-width: 1250px) {
+    body{
+        font-size: 1em;
+    }
+    .middle-container{
+        width: 100%;
+        max-width: 100%;
+        margin: 0%;
+    }
+    .middle-content{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        max-width: 70%;
+        margin: auto;
+    }
+    .project-container{
+        padding-left: 5%;
+        text-align: left;
+    }
+    .project-title{
+        padding-top: 5%;
+    }
+    .project-description{
+        margin: 0%;
+    }
+
+    .lower-container{
+        width: 100%;
+        max-width: 100%;
+        margin: 0%;
+    }
+    .lower-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 80%;
+        margin: auto;
+    }
+    .individual-side, #toni-side{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .links{
+        width: 70%;
+        max-width: 70%;
+        margin: auto;
+    }
+    .job-titles{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .job-title{
+        width: 45%;
+        max-width: 45%;
+        font-size: 0.55em;
+        text-align: right;
+    }
+    .job-title:nth-of-type(2), .job-title:nth-of-type(4){ 
+        text-align: left;
+    }
+
+    #simone-side .period, #toni-side .period{
+        padding: 0% 5%;
+    }
+    .personal-description{
+        text-align: left;
+    }
+    #toni-side{
+        padding-bottom: 5%;
+    }
+
+}
