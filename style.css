@@ -1,7 +1,7 @@
 html{
     background-color: #2D3344;
     color: white;
-    text-align: center;
+   
     font-family: "Oxygen";
 }
 
@@ -18,7 +18,7 @@ body{
 }
 .countdown-container{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     margin: auto;
 }
 .alarm-container{
@@ -168,7 +168,7 @@ body{
   }
 .content-container{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* margin: auto; */ 
 }
 .topl-and-bottoml{
@@ -187,9 +187,17 @@ hr{
     display: flex;
     flex-direction: column;
 }
+.bottom-label {
+    text-align: left;
+    font-size: 1.5rem;
+}
+.top-label{
+    font-size: 2rem;
+}
 .left-and-right{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .settings-space{
     display:flex;
@@ -244,7 +252,7 @@ hr{
 
 .left-and-right{
     display: flex;
-    justify-content: space-around;
+    
 }
 .list-space{
     display:flex;
