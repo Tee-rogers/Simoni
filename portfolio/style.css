@@ -120,7 +120,7 @@ body{
 }
 
 
-@media (max-width: 1250px) {
+@media (max-width: 1180px) {
     body{
         font-size: 1em;
     }
