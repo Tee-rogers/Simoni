@@ -20,6 +20,17 @@ body{
     display:flex;
     justify-content:space-between;
     margin: auto;
+    width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.timer-content-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    justify-content: center;
 }
 .alarm-container{
     display:flex;
@@ -39,7 +50,6 @@ body{
     margin-bottom: 2%;
     font-size: 4rem;
     border-radius: 20%;
-    width: 30%;
     display: flex;
 }
 #hours-container{
@@ -63,8 +73,14 @@ body{
     margin: 0% auto;
     padding: 5%;
     display: flex;
+    
+}
+.timer-control-container{
+    width: 85%;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: flex;
     justify-content: space-around;
-
 }
 .control-buttons{
     color: white;
