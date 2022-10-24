@@ -70,28 +70,11 @@ startButton.addEventListener("click", (e) => {
     if(!document.querySelector(".start-button").classList.contains("pause")){
         console.log("not paused")
         secondsInterval = setInterval(startTimer, 1000)
-        
-        // if(e.target.classList.contains("start")){
-            toggleStartPause("pause")
-            // clearInterval(secondsInterval);
-        // } else if(e.target.classList.contains("pause")){
-            // toggleStartPause("start")
-        // } else{
-            // toggleStartPause("pause")
-        // }
+        toggleStartPause("pause")
     }
     else{
         console.log("paused")
         clearInterval(secondsInterval)
-
-        // if(e.target.classList.contains("start")){
-            // toggleStartPause("pause")
-            // clearInterval(secondsInterval);
-        // } else if(e.target.classList.contains("pause")){
-            toggleStartPause("start")
-        // } else{
-            // toggleStartPause("pause")
-        }
-    
-
+        toggleStartPause("start")
+    }
 })
