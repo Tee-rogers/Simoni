@@ -78,3 +78,11 @@ startButton.addEventListener("click", (e) => {
         toggleStartPause("start")
     }
 })
+
+let resetButton = document.querySelector("#reset-button")
+resetButton.addEventListener("click", (e) => {
+    clearInterval(secondsInterval)
+    document.querySelector("#hours-number").selectedIndex = 0; 
+    document.querySelector("#minutes-number").selectedIndex = 0; 
+    document.querySelector("#seconds-number").selectedIndex = 0; 
+})
