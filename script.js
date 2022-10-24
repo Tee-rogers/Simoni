@@ -61,24 +61,28 @@ function startTimer(){
 };
 
 startButton.addEventListener("click", (e) => {
-    secondsInterval = setInterval(startTimer, 10)
-    
     function toggleStartPause(state){
         e.target.innerText = `${state}`.toUpperCase(); 
         e.target.classList.remove("start")
         e.target.classList.remove("pause")
         e.target.classList.add(state)
     }
-    
-    if(e.target.classList.contains("start")){
+    if(!document.querySelector(".start-button").classList.contains("pause")){
+        console.log("not paused")
+        secondsInterval = setInterval(startTimer, 1000)
         toggleStartPause("pause")
-        clearInterval(secondsInterval);
-    } else if(e.target.classList.contains("pause")){
-        toggleStartPause("start")
-    } else{
-        toggleStartPause("pause")
-        console.log("First timer")
     }
+    else{
+        console.log("paused")
+        clearInterval(secondsInterval)
+        toggleStartPause("start")
+    }
+})
 
-
+let resetButton = document.querySelector("#reset-button")
+resetButton.addEventListener("click", (e) => {
+    clearInterval(secondsInterval)
+    document.querySelector("#hours-number").selectedIndex = 0; 
+    document.querySelector("#minutes-number").selectedIndex = 0; 
+    document.querySelector("#seconds-number").selectedIndex = 0; 
 })
