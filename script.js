@@ -61,16 +61,15 @@ function startTimer(){
 };
 
 startButton.addEventListener("click", (e) => {
+    function toggleStartPause(state){
+        e.target.innerText = `${state}`.toUpperCase(); 
+        e.target.classList.remove("start")
+        e.target.classList.remove("pause")
+        e.target.classList.add(state)
+    }
     if(!document.querySelector(".start-button").classList.contains("pause")){
         console.log("not paused")
         secondsInterval = setInterval(startTimer, 1000)
-        
-        function toggleStartPause(state){
-            e.target.innerText = `${state}`.toUpperCase(); 
-            e.target.classList.remove("start")
-            e.target.classList.remove("pause")
-            e.target.classList.add(state)
-        }
         
         // if(e.target.classList.contains("start")){
             toggleStartPause("pause")
@@ -93,6 +92,6 @@ startButton.addEventListener("click", (e) => {
         // } else{
             // toggleStartPause("pause")
         }
-    }
+    
 
 })
