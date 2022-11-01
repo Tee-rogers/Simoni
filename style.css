@@ -255,7 +255,7 @@ hr{
     justify-content: left;
     min-width: 90%;
 }
-.main-content, .main-display{
+.main-content, .main-display, {
     width: 90%;
     margin: auto;
 }

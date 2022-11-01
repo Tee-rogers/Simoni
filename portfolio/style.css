@@ -1,11 +1,15 @@
 body{
     font-family: 'Actor';
-    background-image: url('../images/background.jpg');
+    background-image: linear-gradient(to right, #FF9F1C, #EF476F);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.5em;
 }
+.main-logo {
+    width: 50%;
+    height: auto;
+  }
 .upper-container{
     padding-bottom: 7%;
     padding-top: 3%;
