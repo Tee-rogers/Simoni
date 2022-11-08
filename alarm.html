@@ -13,15 +13,14 @@
     <div class="main-content">
         <h1 class="header">ALARM</h1>
         <button class="action-button">
-            <a href="#">
+            <!-- <a href="#"> -->
                 <img src="./images/addbtn.png" alt="add" />
-            </a>
+            <!-- </a> -->
         </button>
     </div>
 
     
     <div class="content-list">
-        
         <div class="content-container">
             <div class="topl-and-bottoml">
                 <div class="top-label">12:00pm</div>
@@ -61,28 +60,6 @@
     
         <hr>
     
-        <div class="bottom-navigation">
-            <div class="nav-item">
-                <a href="world.html">
-                    <img src="images/world.png" alt="world clock" />
-                    <div>WORLD CLOCK</div>
-                </a>
-            </div>
-    
-            <div class="nav-item">
-                <a href="alarm.html">
-                    <img src="./images/alarm.png" alt="alarm clock" />
-                    <div>ALARM</div>
-                </a>
-            </div>
-    
-            <div class="nav-item">
-                <a href="index.html">
-                    <img src="./images/timer.png" alt="timer" />
-                    <div>TIMER</div>
-                </a>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -95,15 +72,15 @@
         </button>
         <h2 class="header2"> Edit Alarm</h2>
         <button class="action-button">
-                <a href="#">
-                    <img src="./images/addbtn.png" alt="add" />
-                </a>
+            <a href="#">
+                <img src="./images/addbtn.png" alt="add" />
+            </a>
         </button>
-
+        
     </div>
     
     <div class="alarm-container">
-
+        
         <div class="clock-space"> 
             <div class="number-container" id="hours-container">
                 <select id="hours-number" class="number"></select>
@@ -140,13 +117,37 @@
             <div class="left-label">Snooze</div>
             <div class="right-label">10 mins</div>
         </div>
-    
+        
         <div class="control-container">
             <button class="delete-button" id="deletes-button">DELETE ALARM</button>  
         </div>
+        
+    </div>
+    
+    <div class="bottom-navigation">
+        <div class="nav-item">
+            <a href="world.html">
+                <img src="images/world.png" alt="world clock" />
+                <div>WORLD CLOCK</div>
+            </a>
+        </div>
+    
+        <div class="nav-item">
+            <a href="alarm.html">
+                <img src="./images/alarm.png" alt="alarm clock" />
+                <div>ALARM</div>
+            </a>
+        </div>
+    
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="./images/timer.png" alt="timer" />
+                <div>TIMER</div>
+            </a>
+        </div>
+    </div>
 
-</div>
-
+    <script src="alarm.js"></script>
 </body>
 
 </html>

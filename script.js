@@ -86,3 +86,4 @@ resetButton.addEventListener("click", (e) => {
     document.querySelector("#minutes-number").selectedIndex = 0; 
     document.querySelector("#seconds-number").selectedIndex = 0; 
 })
+
