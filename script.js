@@ -68,12 +68,10 @@ startButton.addEventListener("click", (e) => {
         e.target.classList.add(state)
     }
     if(!document.querySelector(".start-button").classList.contains("pause")){
-        console.log("not paused")
         secondsInterval = setInterval(startTimer, 1000)
         toggleStartPause("pause")
     }
     else{
-        console.log("paused")
         clearInterval(secondsInterval)
         toggleStartPause("start")
     }
@@ -85,5 +83,9 @@ resetButton.addEventListener("click", (e) => {
     document.querySelector("#hours-number").selectedIndex = 0; 
     document.querySelector("#minutes-number").selectedIndex = 0; 
     document.querySelector("#seconds-number").selectedIndex = 0; 
+    // toggleStartPause("pause")
+    document.querySelector(".pause").classList.add("start")
+    document.querySelector(".pause").textContent = "START"
+    document.querySelector(".pause").classList.remove("pause")
 })
 
