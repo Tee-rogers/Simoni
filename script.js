@@ -83,7 +83,6 @@ resetButton.addEventListener("click", (e) => {
     document.querySelector("#hours-number").selectedIndex = 0; 
     document.querySelector("#minutes-number").selectedIndex = 0; 
     document.querySelector("#seconds-number").selectedIndex = 0; 
-    // toggleStartPause("pause")
     document.querySelector(".pause").classList.add("start")
     document.querySelector(".pause").textContent = "START"
     document.querySelector(".pause").classList.remove("pause")

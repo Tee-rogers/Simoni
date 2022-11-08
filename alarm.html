@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alarm.css">
 </head>
 <body> 
 
@@ -76,53 +77,116 @@
                 <img src="./images/addbtn.png" alt="add" />
             </a>
         </button>
-        
     </div>
     
     <div class="alarm-container">
         
         <div class="clock-space"> 
             <div class="number-container" id="hours-container">
-                <select id="hours-number" class="number"></select>
+                <select id="hours-number" class="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
             </div>
             <div class="number-label">HOURS</div>
         </div>
         <div class="clock-space" > 
             <div class="number-container" id="minutes-container">
-                <select id="minutes-number" class="number"></select>
+                <select id="minutes-number" class="number">
+
+                </select>
             </div>
             <div class="number-label">MINUTES</div>
         </div>
         <div class="clock-space" > 
             <div class="number-container" id="seconds-container">
-                <select id="seconds-number" class="number"></select>
+                <select id="seconds-number" class="number">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
             </div>
             <div class="number-label">AM/PM</div>
         </div>
     </div>
     <div class="settings-space">
         <div class="left-and-right">
-            <div class="left-label">Repeat</div>
-            <div class="right-label">Never</div>
+            <label class="left-label">Repeat</label>
+            <select name="repeat" id="repeat">
+                <option value="never">Never</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
         </div>
         <div class="left-and-right">
             <div class="left-label">Label</div>
-            <div class="right-label">Alarm Name</div>
+            <input class="right-label" id="alarm-name" type="text" placeholder="Alarm Name">
         </div>
         <div class="left-and-right">
-            <div class="left-label">Sound</div>
-            <div class="right-label">Harp</div>
+            <label class="left-label">Sound</label>
+            <select name="sound" id="sound">
+                <option value="">Radar(Default)</option>
+                <option value="">Apex</option>
+                <option value="">Beacon</option>
+                <option value="">Bulletin</option>
+                <option value="">By The Seaside</option>
+                <option value="">Chimes</option>
+                <option value="">Circuit</option>
+                <option value="">Constellation</option>
+                <option value="">Cosmic</option>
+                <option value="">Crystals</option>
+                <option value="">Hillside</option>
+                <option value="">Illuminate</option>
+                <option value="">Night Owl</option>
+                <option value="">Opening</option>
+                <option value="">Playtime</option>
+                <option value="">Presto</option>
+                <option value="">Radiate</option>
+                <option value="">Reflection</option>
+                <option value="">Ripples</option>
+                <option value="">Sencha</option>
+                <option value="">Signal</option>
+                <option value="">Silk</option>
+                <option value="">Slow Rise</option>
+                <option value="">Stargaze</option>
+                <option value="">Summit</option>
+                <option value="">Twinkle</option>
+                <option value="">Uplift</option>
+                <option value="">Waves</option>
+                <option value="">Classic</option>
+                <option value="">None</option>
+            </select>
         </div>
         <div class="left-and-right">
             <div class="left-label">Snooze</div>
-            <div class="right-label">10 mins</div>
+            <div class="right-label">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </div>
         
         <div class="control-container">
             <button class="delete-button" id="deletes-button">DELETE ALARM</button>  
         </div>
-        
     </div>
+        
+</div>
     
     <div class="bottom-navigation">
         <div class="nav-item">
